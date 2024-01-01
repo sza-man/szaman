@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Zadanie</title>
+    <style>
+        body {
+            background-color: #181818;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: white;
+        }
+
+        li {
+            margin-bottom: 25px;
+            font-size: small;
+            list-style-type: none;
+            color: #D8D8D8;
+        }
+
+        .upper {
+            display: block;
+            width: 100%;
+            height: 35px;
+            background-color: #282828;
+            margin-top: 7px;
+            border-bottom: 1px solid #484848;
+        }
+
+        .logofb {
+            position: relative;
+            margin-top: 2px;
+            margin-left: 6px;
+            height: 28px;
+        }
+
+        .szukajblock {
+            display: block;
+            position: relative;
+            margin-left: 43px;
+            margin-top: -30px;
+            width: 180px;
+            height: 25px;
+            background-color: #484848;
+            border-radius: 28px;
+        }
+
+        .szukajtekst {
+            position: relative;
+            margin-top: -18px;
+            margin-left: 70px;
+            color: #888888;
+            font-size: x-small;
+        }
+
+        .twojeskroty {
+            position: relative;
+            margin-left: -20px;
+            margin-top: 40px;
+            color: #909090;
+        }
+
+        .listalewa {
+            position: relative;
+            margin-left: 250px;
+        }
+
+        .listaprawa {
+            position: relative;
+            margin-left: 950px;
+            margin-top: -570px;
+
+        }
+
+        .granica1 {
+            display: block;
+            width: 190px;
+            border-bottom: 1px solid #404040;
+            position: absolute;
+            margin: 0;
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        /* lewa */
+        .granica2 {
+            display: block;
+            width: 230px;
+            border-bottom: 1px solid #404040;
+            position: relative;
+            margin: 10px;
+            margin-left: -35px;
+            margin-top: -15px;
+        }
+
+        /* prawa górna */
+
+        .granica3 {
+            display: block;
+            width: 230px;
+            border-bottom: 1px solid #404040;
+            position: relative;
+            margin: 10px;
+            margin-left: -35px;
+            margin-top: -15px;
+        }
+
+        /* prawa dolna*/
+
+        .granica4 {
+            display: block;
+            width: 380px;
+            border-bottom: 1px solid #404040;
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 40px;
+        }
+
+        /* środkowa górna*/
+
+        .granica5 {
+            display: block;
+            width: 380px;
+            border-bottom: 1px solid #404040;
+            position: absolute;
+            margin-left: 510px;
+            margin-top: -285px;
+        }
+
+        /* środkowa dolna*/
+
+        .przelacz {
+            position: relative;
+            margin-top: -5px;
+            font-size: x-small;
+            color: #909090;
+        }
+
+        .utworz {
+            position: relative;
+            margin-top: -10px;
+            font-size: x-small;
+            color: #909090;
+        }
+
+        .prawogora {
+            position: relative;
+            margin-left: -40px;
+            margin-bottom: 15px;
+            color: #909090;
+        }
+
+        .dolstrony {
+            position: relative;
+            margin-left: 250px;
+        }
+
+        .dol1 {
+            position: relative;
+            margin-bottom: -20px;
+            font-size: xx-small;
+            color: #909090;
+        }
+
+        .dol2 {
+            font-size: xx-small;
+            color: #909090;
+        }
+
+        .grafika1 {
+            position: relative;
+            height: 150px;
+            margin-top: 20px;
+            margin-left: 500px;
+        }
+
+        .grafika2345 {
+
+            height: 150px;
+
+        }
+
+        .midblock {
+            display: block;
+            position: relative;
+            margin-left: 500px;
+            margin-top: 10px;
+            width: 410px;
+            height: 80px;
+            background-color: #282828;
+            border-radius: 5px;
+        }
+
+        .inmidblock {
+            display: block;
+            position: relative;
+            margin-left: 550px;
+            margin-top: -70px;
+            width: 350px;
+            height: 25px;
+            background-color: #484848;
+            border-radius: 28px;
+        }
+
+        .inmidblocktekst {
+            position: relative;
+            font-size: x-small;
+            color: #888888;
+            margin-left: 560px;
+            margin-top: -17px;
+        }
+
+        .midblockbottom {
+            display: block;
+            position: absolute;
+            background-color: #282828;
+            width: 410px;
+            height: 480px;
+            margin-left: 500px;
+            margin-top: -315px;
+            border-radius: 5px;
+        }
+
+        .transmisja {
+            position: absolute;
+            font-size: x-small;
+            margin-top: 235px;
+            margin-left: 535px;
+            color: #A8A8A8;
+        }
+
+        .zdjecie {
+            position: absolute;
+            font-size: x-small;
+            margin-top: 235px;
+            margin-left: 690px;
+            color: #A8A8A8;
+        }
+
+        .nastroj {
+            position: absolute;
+            font-size: x-small;
+            margin-top: 235px;
+            margin-left: 800px;
+            color: #A8A8A8;
+        }
+
+        .oznaczono {
+            position: absolute;
+            margin-left: 510px;
+            margin-top: -305px;
+            color: #B0B0B0;
+            font-size: x-small;
+        }
+
+        .randoma {
+            color: white;
+        }
+
+        .jakubrandom {
+            position: absolute;
+            margin-left: 550px;
+            margin-top: -275px;
+            color: #B0B0B0;
+            font-size: x-small;
+        }
+
+        .zawijany {
+            position: absolute;
+            margin-left: 510px;
+            margin-top: -420px;
+            display: block;
+            width: 390px;
+            height: 65px;
+            overflow-block: visible;
+            color: #D0D0D0;
+            font-size: x-small;
+        }
+
+        .godz5 {
+            font-size: xx-small;
+            position: absolute;
+            margin-top: -440px;
+            margin-left: 550px;
+            color: #B0B0B0;
+        }
+
+        .sowa {
+            position: absolute;
+            width: 410px;
+            margin-left: 500px;
+            margin-top: -370px;
+        }
+
+        .kolotop {
+            display: block;
+            position: absolute;
+            margin-top: -33px;
+            margin-left: 1470px;
+            background-color: #484848;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .kolotop2 {
+            display: block;
+            position: absolute;
+            margin-left: -40px;
+            background-color: #484848;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .kolotop3 {
+            display: block;
+            position: absolute;
+            margin-left: -80px;
+            background-color: #484848;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        .kolotop4 {
+            display: block;
+            position: absolute;
+            margin-left: -120px;
+            background-color: #484848;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+        /* Zawijany tekst w centrum strony */
+    </style>
+</head>
+
+<body>
+    <div class="upper">
+        <div><img class="logofb" src="C:\Users\Szymą\OneDrive\Pulpit\js\Facebook_Logo_2023.png" alt="logofb">
+            <div class="kolotop"><span class="kolotop2"></span><span class="kolotop3"></span><span class="kolotop4"></span></div>
+            <div class="szukajblock">
+            </div>
+            <p class="szukajtekst">Szukaj na Facebooku</p>
+        </div>
+        <div>
+            <img class="grafika1" src="C:\Users\Szymą\OneDrive\Pulpit\js\1.jpg" alt="grafika1">
+            <img class="grafika2345" src="C:\Users\Szymą\OneDrive\Pulpit\js\2.jpg" alt="grafika2">
+            <img class="grafika2345" src="C:\Users\Szymą\OneDrive\Pulpit\js\3.jpg" alt="grafika3">
+            <img class="grafika2345" src="C:\Users\Szymą\OneDrive\Pulpit\js\4.jpg" alt="grafika4">
+            <img class="grafika2345" src="C:\Users\Szymą\OneDrive\Pulpit\js\5.jpg" alt="grafika5">
+        </div>
+        <div class="midblock">
+            <div class="granica4"></div>
+        </div>
+        <div class="inmidblock">
+        </div>
+        <p class="inmidblocktekst">O czym myślisz, Szymą?</p>
+
+    </div>
+    <p class="transmisja">Transmisja wideo na żywo</p>
+    <p class="zdjecie">Zdjęcie/film</p>
+    <p class="nastroj">Nastrój/aktywność</p>
+    <div>
+        <ul class="listalewa">
+            <li>Szymą Korbolewski</li>
+            <li>Znajomi</li>
+            <li>Wydarzenia</li>
+            <li>Aktualności</li>
+            <li>Grupy</li>
+            <li>Marketplace</li>
+            <li>Zobacz więcej</li>
+            <div class="granica1"></div>
+            <li class="twojeskroty">Twoje skróty</li>
+            <li>NaviExpert Telematics</li>
+            <li>NaviExpert</li>
+            <li>Rysiek Widzimisie</li>
+            <li>Nieformalna Grupa Ratajska</li>
+            <li>8 Ball Pool</li>
+            <li>Zobacz wiecej</li>
+        </ul>
+    </div>
+    <div class="midblockbottom"></div>
+    <div>
+        <p class="oznaczono">Oznaczono <span class="randoma">Randoma</span> i <span class="randoma">Randoma</span>
+    </div>
+    <div>
+        <p class="jakubrandom"><span class="randoma">Jakub Random</span> jest z <span class="randoma">Maciej
+                Random</span> i <span class="randoma">4 innymi randomami</span></p>
+    </div>
+    <div class="granica5"></div>
+    <div>
+        <ul class="listaprawa">
+            <li class="prawogora">Twoje strony i profile</li>
+            <li>NaviExpert</li>
+            <li class="przelacz">Przełącz na stronę</li>
+            <li class="utworz">Utwórz promocję</li>
+            <div class="granica2"></div>
+            <li class="prawogora">Urodziny</li>
+            <li>Random ma dzisiaj urodziny</li>
+            <div class="granica3"></div>
+            <li class="prawogora">Kontakty</li>
+            <li>Znajomy1</li>
+            <li>Znajomy2</li>
+            <li>Znajomy3</li>
+            <li>Znajomy4</li>
+            <li>Znajomy5</li>
+            <li>Znajomy6</li>
+            <li>Znajomy7</li>
+            <li>Znajomy8</li>
+            <li>Znajomy9</li>
+            <li>Znajomy10</li>
+            <li>Znajomy11</li>
+            <li>Znajomy12</li>
+        </ul>
+    </div>
+    <div class="dolstrony">
+        <ul>
+            <li>
+                <p class="dol1">Prywatność Regulamin Reklama Opcje Reklam</p>
+            </li>
+            <li>
+                <p class="dol2">Pliki cookie Więcej Meta 2023</p>
+            </li>
+        </ul>
+    </div>
+    <div class="godz5"> 5 godz.</div>
+    <div class="zawijany">Zajebiście długi tekst o jakichś randomowych znajomych, nie za bardzo mnie obchodzi co tam sie
+        dzieje. Poniżej zapewne wrzucę jakąś grafikę, żęby wypełnić resztę strony ale nie pokazywać mord, hehe. Poza tym
+        to sowy nie potrafią obracać gałek ocznych, dlatego obracają cały łeb.
+        Ponoć 1-2% populacji cierpi na schizofrenię.
+    </div>
+    <div><img class="sowa" src="C:\Users\Szymą\OneDrive\Pulpit\js\sowa-sniezna-z-bliska.jpg" alt="sowa chce zryc"></div>
+
+</body>
+
+</html>
