@@ -28,26 +28,6 @@ li {
     margin-left: 6px;
     height: 28px;
 }
-
-.szukajblock {
-    display: block;
-    position: relative;
-    margin-left: 43px;
-    margin-top: -30px;
-    width: 180px;
-    height: 25px;
-    background-color: #484848;
-    border-radius: 28px;
-}
-
-.szukajtekst {
-    position: relative;
-    margin-top: -18px;
-    margin-left: 70px;
-    color: #888888;
-    font-size: x-small;
-}
-
 .twojeskroty {
     position: relative;
     margin-left: -20px;
