@@ -24,6 +24,7 @@ ul {
 
 .logofb {
     width: 40px;
+    vertical-align: middle;
 }
 
 .kolotop {
@@ -39,7 +40,7 @@ display: flex;
 }
 
 .search {
-vertical-align: middle;
+
 
 }
 
