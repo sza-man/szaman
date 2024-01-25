@@ -6,32 +6,43 @@ body {
     color: white;
 }
 
-li {
-    margin-bottom: 25px;
-    font-size: small;
+ul {
+    padding-left: 0px;
     list-style-type: none;
-    color: #D8D8D8;
+    margin: 0;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: blue;
+    z-index: 1;
+    position: relative;
 
 }
 
 .logofb {
-    
+    width: 40px;
 }
 
 .kolotop {
-   
+display: flex;
+
 }
 
-.kolotop > li {
-   
+.kolotop>li {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 20px;
 }
 
-.search{
-    
+.search {
+vertical-align: middle;
+
 }
+
 .upper {
     display: block;
     width: 100%;
