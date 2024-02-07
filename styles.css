@@ -12,6 +12,12 @@ ul {
     margin: 0;
 }
 
+li img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 20px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,16 +35,18 @@ ul {
 
 .kolotop {
 display: flex;
+gap: 60px;
+margin-right: 100px;
 }
 
 .kolotop2 {
 display: flex;
+gap: 5px;
 }
 
 .kolotop>li {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
     background-color: red;
     border-radius: 20px;
 }
@@ -46,7 +54,6 @@ display: flex;
 .kolotop2>li {
     width: 40px;
     height: 40px;
-    margin-right: 5px;
     background-color: red;
     border-radius: 20px;
 }
