@@ -166,17 +166,9 @@ gap: 5px;
     color: #909090;
 }
 
-.grafika1 {
-    position: relative;
+.grafiki>li {
+    display: flex;
     height: 150px;
-    margin-top: 20px;
-    margin-left: 500px;
-}
-
-.grafika2345 {
-
-    height: 150px;
-
 }
 
 .midblock {
