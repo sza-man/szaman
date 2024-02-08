@@ -271,7 +271,7 @@ ul {
 
 /* Zawijany tekst w centrum strony */
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     * {
         border: 1px solid red;
     }
