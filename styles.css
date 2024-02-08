@@ -20,7 +20,11 @@ ul {
     z-index: 1;
     position: relative;
     border-bottom: 2px solid #686868;
+}
 
+.header-item {
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .logofb {
@@ -28,26 +32,22 @@ ul {
     vertical-align: middle;
 }
 
-.kolotop {
-display: flex;
-gap: 60px;
-margin-right: 100px;
+.kolotopmid {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
 }
 
-.kolotop2 {
-display: flex;
-gap: 5px;
+.kolotopright {
+    display: flex;
+    gap: 5px;
+    justify-content: right;
 }
 
-.kolotop img {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 20px;
-}
-
-.kolotop2 img {
-    width: 40px; 
-    height: 40px; 
+.kolotopmid img,
+.kolotopright img {
+    width: 40px;
+    height: 40px;
     border-radius: 20px;
 }
 
@@ -59,24 +59,20 @@ gap: 5px;
 }
 
 .main3 li {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.grafiki {
-    
-}
+.grafiki {}
 
 .grafiki li {
-    display:inline-block;
+    display: inline-block;
 }
 
 .grafiki img {
     height: 250px;
 }
 
-.search {
-
-}
+.search {}
 
 .twojeskroty {
     position: relative;
@@ -153,10 +149,10 @@ margin-bottom: 10px;
     color: #909090;
 }
 
- .prawogora {
+.prawogora {
     position: relative;
     color: #909090;
-} 
+}
 
 .dolstrony {
     position: relative;
