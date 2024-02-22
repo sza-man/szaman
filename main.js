@@ -32,11 +32,13 @@ var samochod2 = ["blue", 12]
 calc(samochod2[1]);
 
 /*Druga lekcja JS*/
-const headerClick = () => {
+const headerClick = (event) => {
 
-    console.log("Klikniete");
+if (!event.target.id=="search") console.log("Klikniete", event.target.id);
 
 };
+
+
 
 const headerItem = document.getElementById("header-item");
 console.log(headerItem);
@@ -44,7 +46,7 @@ headerItem.addEventListener("click", headerClick);
 
 const search = document.getElementById("search");
 console.log(search);
-headerItem.addEventListener("click", () => {
+search.addEventListener("click", () => {
 
     console.log("jestes leszczem");
 
