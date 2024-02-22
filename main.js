@@ -1,5 +1,5 @@
 const calc = (a) => {
-    console.log(a * a);
+  //  console.log(a * a);
 
 }
 
@@ -30,4 +30,6 @@ calc(samochod["length"]);
 var samochod2 = ["blue",12]
 
 calc(samochod2[1]);
+
+/*Druga lekcja JS*/
 
