@@ -33,12 +33,10 @@ calc(samochod2[1]);
 
 /*Druga lekcja JS*/
 const headerClick = (event) => {
-
     if (event.target.id != "search") console.log("Klikniete", event.target.id);
-
 };
 
-
+ 
 
 const headerItem = document.getElementById("header-item");
 console.log(headerItem);
@@ -77,18 +75,36 @@ addEventListenerTest('click', clickItem);
 const greeter = () => console.log('Siema');
 const greeter2 = (name) => console.log('Siema ' + name);
 
-
+1.
 if('wartosc') //zrob cos
 
+2.
 if('wartosc') {
     //zrob cos
 }
 
+3.
 if('wartosc') {
     //zrob cos
 } else {
     //jesli nie to zrob to
 }
+
+4.
+if('wartosc') {
+    if('wartosc') console.log('costam')
+    //zrob cos
+} else {
+    //jesli nie to zrob to
+}
+
+4. const wartosc = waruneklogiczny ? 'wartosctrue' : 'wartoscfalse';
+iloscKol = 4;
+iloscKol > 0 ? 'tak':'nie';
+//'tak'
+iloscKol = 0;
+iloscKol > 0 ? 'tak':'nie';
+//'nie'
 
 //greeter2('Kuba');
 /* */
