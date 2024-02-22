@@ -51,3 +51,29 @@ search.addEventListener("click", () => {
     console.log("jestes leszczem");
 
 });
+
+/* Przykład * /
+
+const show = (x) => console.log(x);
+
+const doAction = () => {
+    show(5);
+    show(2);
+    show(10);
+}
+
+
+const test = (typEventu, funkcja) => {
+    console.log('dla eventu "' + typEventu + '" wykonaj ', funkcja);
+}
+
+const testClick = (value) => {console.log('blablala' + value)};
+
+test('click', testClick);
+
+
+const greeter = () => console.log('Siema');
+const greeter2 = (name) => console.log('Siema ' + name);
+
+greeter2('Kuba');
+/* */
