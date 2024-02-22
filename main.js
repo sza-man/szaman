@@ -34,7 +34,7 @@ calc(samochod2[1]);
 /*Druga lekcja JS*/
 const headerClick = (event) => {
 
-    if (event.target.id != "search") console.log("Klikniete", event.target);
+    if (event.target.id != "search") console.log("Klikniete", event.target.id);
 
 };
 
@@ -63,17 +63,32 @@ const doAction = () => {
 }
 
 
-const test = (typEventu, funkcja) => {
-    console.log('dla eventu "' + typEventu + '" wykonaj ', funkcja);
+const addEventListenerTest = (typEventu, funkcja) => {
+    funkcja('event');
 }
 
-const testClick = (value) => {console.log('blablala' + value)};
+const clickItem = (event) => {
+    console.log('blablala', event)
+};
 
-test('click', testClick);
+addEventListenerTest('click', clickItem);
 
 
 const greeter = () => console.log('Siema');
 const greeter2 = (name) => console.log('Siema ' + name);
 
-greeter2('Kuba');
+
+if('wartosc') //zrob cos
+
+if('wartosc') {
+    //zrob cos
+}
+
+if('wartosc') {
+    //zrob cos
+} else {
+    //jesli nie to zrob to
+}
+
+//greeter2('Kuba');
 /* */
