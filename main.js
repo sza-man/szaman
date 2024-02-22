@@ -34,7 +34,7 @@ calc(samochod2[1]);
 /*Druga lekcja JS*/
 const headerClick = (event) => {
 
-if (!event.target.id=="search") console.log("Klikniete", event.target.id);
+    if (event.target.id != "search") console.log("Klikniete", event.target);
 
 };
 
