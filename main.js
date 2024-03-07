@@ -5,8 +5,6 @@ const calc = (a) => {
 
 
 
-
-
 let dupsko = 4;
 let Krystian = 100;
 var Szymon = 2;
@@ -36,7 +34,7 @@ const headerClick = (event) => {
     if (event.target.id != "search") console.log("Klikniete", event.target.id);
 };
 
- 
+
 
 const headerItem = document.getElementById("header-item");
 console.log(headerItem);
@@ -108,3 +106,127 @@ iloscKol > 0 ? 'tak':'nie';
 
 //greeter2('Kuba');
 /* */
+
+
+const boki = [2, 5, 78, 41, 12, 63];
+
+const pole = (a) => a * a;
+
+const wartosci = boki.map(pole);
+
+console.log(wartosci);
+
+
+
+const imiona = ["a", "t", "u", "a", "x", "d"];
+
+const greeter = (imie) => "siema " + imie;
+
+const greet = imiona.map(greeter);
+
+console.log(greet);
+
+
+
+
+
+const imgList = ["a", "t", "u", "a", "x", "d"];
+
+const code = (src) => '<li><img src="' + src + '" alt="cat" /></li>';
+
+const mapped = imgList.map(code);
+
+console.log(mapped);
+
+
+
+
+const pole5 = (a) => a * a;
+
+const pole6 = (a) => {
+    const pole = a * a;
+    return pole;
+
+};
+
+console.log(pole5(43));
+console.log(pole6(43));
+
+
+
+
+
+
+
+const auto = {
+
+    kolor: "czerwony",
+    kola: 4,
+
+};
+
+const auto2 = {
+
+    kolor: "niebieski",
+    kola: 18,
+
+};
+
+const auto3 = {
+
+    kolor: "zielony",
+    kola: 1,
+
+};
+
+const view = (car) => {
+
+    return [car.kolor, car.kola];
+
+};
+
+console.log(view(auto));
+console.log(view(auto2));
+
+
+
+
+
+
+
+const auta = [auto, auto2, auto3, { kola: 4, kolor: "sraczkowaty" }];
+
+const autaview = (car) => {
+
+    return car.kolor + " " + car.kola;
+};
+
+const autazmapowane = auta.map(autaview);
+
+console.log(autazmapowane);
+
+
+
+
+
+/* const imgList = ["a", "t", "u", "a", "x", "d"];
+
+const code = (src) => '<li><img src="' + src + '" alt="cat" /></li>';
+
+const mapped = imgList.map(code);
+
+console.log(mapped); */
+
+
+const imgList2 = [{ img: "J", alt: "U" }, { img: "H", alt: "O" }, { img: "P", alt: "F" }, { img: "7", alt: "1" }];
+
+const funk = (srcalt) => {
+
+    const srcaltview = '<li><img src="' + srcalt.img + '" alt="' + srcalt.alt + '"/></li>';
+    return srcaltview;
+
+};
+
+const mapers = imgList2.map(funk);
+
+console.log(mapers);
